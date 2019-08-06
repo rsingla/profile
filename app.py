@@ -10,8 +10,8 @@ def hello_world():
     target = os.environ.get('TARGET', 'World')
     return 'Hello {}!\n'.format(target)
 
-@app.route('/file')
-def hello_world():
+@app.route('/person')
+def get_person_data():
     return GetJson()
 
 if __name__ == "__main__":
